@@ -51,13 +51,12 @@ header {
 }
 
 .book-now {
-  background: linear-gradient(to right, #7ed957, #0097B2);
+  background: linear-gradient(to bottom, #ffffff, #008DD2, #008DD2, #008DD2);
   color: white;
   padding: 5px 15px;
-  border: none;
-  border-radius: 20px;
+  border: 2px solid #008DD2;
+  border-radius: 10px;
   cursor: pointer;
-  margin-left: auto;
   margin-right: 20px;
 }
 
@@ -157,7 +156,10 @@ header {
 .txt button{
   font: 25px/1.5 Arial, sans-serif;
   margin-top: 10px;
-	padding: 10px 5px 10px 5px;
+  background: linear-gradient(to bottom, #ffffff, #008DD2, #008DD2, #008DD2);
+  border: 2px solid #008DD2;
+  border-radius: 20px;
+  padding: 10px 5px 10px 5px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
