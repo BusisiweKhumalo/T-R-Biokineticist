@@ -175,23 +175,7 @@ header {
   padding: 25px 0 20px 0;
 }
 
-.map1{
-  width: 33%;
-  height: 300px;
-  margin: auto;
-  border: 2px solid #90D577;
-  overflow: hidden;
-}
-
-.map2{
-  width: 33%;
-  height: 300px;
-  margin: auto;
-  border: 2px solid #90D577;
-  overflow: hidden;
-}
-
-.map3{
+.maps div{
   width: 33%;
   height: 300px;
   margin: auto;
