@@ -5,14 +5,17 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  overflow-x: hidden; 
+  /*font-family: Arial, sans-serif;*/
+  font: 15px/1.5 Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #F4F5F7;
 }
 
+/*------------------------------------------------------------------------------------------------------------------------------*/
 header {
   background-image: url('12671d42.png');
   background-size: cover;
-  height: 400px;
+  height: 500px;/*200 to 500*/
   width: 100%;
 }
 
@@ -22,7 +25,8 @@ header {
 }
 
 .navbar {
-  height: 70px;
+  font: 18px/1.5 Arial, sans-serif;
+  height: 90px;/*50 to 90*/
   background: linear-gradient(to right, #0097B2, #7ed957);
   display: flex;
   align-items: center;
@@ -31,11 +35,11 @@ header {
 }
 
 .logo img {
-  width: 50px;
+  width: 80px;/*50 to 80*/
   margin-left: 20px;
 }
 
-.nav-links {
+.nav-links {/*recheck this*/
   list-style-type: none;
   display: flex;
   margin-left: auto;
@@ -57,26 +61,66 @@ header {
   margin-right: 20px;
 }
 
-#home {
-  padding-top: 10px;
+.intro-text{
+	font: 45px/1.5 Arial, sans-serif;
+	text-align: center;
+	margin-top: 50px;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+#contents {
+  width: 90%;
+  margin: auto;
+  padding: 25px 0 25px 0;
 }
 
 .picture-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .picture {
+  font: 19px/1.5 Arial, sans-serif;
+  padding-top: 15px;
+  width: 27%;
+  height: 550px; 
   text-align: center;
+  margin: auto;
 }
 
 .picture img {
   border-radius: 50%; 
-  width: 150px; 
-  height: 150px; 
+  width: 200px;
+  height: 200px; 
   object-fit: cover;
+  margin-top: 0;
 }
 
+.picture h3{
+  margin: 25px 0 25px 0;
+  text-decoration: underline;
+}
+
+.picture p{
+  color: #00BF63;
+}
+
+.picture a{
+	text-decoration: underline;
+	color: #008DD2;
+}
+.picture a:link {
+	color: #008DD2;
+}
+.picture a:visited {
+	color: #008DD2;
+}
+.picture a:hover {
+	text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
 .footer-content {
   background: linear-gradient(180deg, #7ed957, #0097B2);
   display: flex;
@@ -105,4 +149,18 @@ header {
 .footer-column img {
   width: 10px; 
   height: 10px; 
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+a{
+	text-decoration: none;
+}
+a:link {
+	color: #ffffff;
+}
+a:visited {
+	color: #ffffff;
+}
+a:hover {
+	text-decoration: underline;
 }
