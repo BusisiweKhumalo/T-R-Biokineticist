@@ -46,6 +46,11 @@ header {
   margin-right: 20px;
 }
 
+.currentPage{
+  color: #045782;
+  font-weight: bold;
+}
+
 .nav-links li {
   margin-left: 20px;
 }
@@ -160,6 +165,38 @@ header {
   border: 2px solid #008DD2;
   border-radius: 20px;
   padding: 10px 5px 10px 5px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+.maps{
+  display: flex;
+  margin: auto;
+  padding: 25px 0 20px 0;
+}
+
+.map1{
+  width: 33%;
+  height: 300px;
+  margin: auto;
+  border: 2px solid #90D577;
+  overflow: hidden;
+}
+
+.map2{
+  width: 33%;
+  height: 300px;
+  margin: auto;
+  border: 2px solid #90D577;
+  overflow: hidden;
+}
+
+.map3{
+  width: 33%;
+  height: 300px;
+  margin: auto;
+  border: 2px solid #90D577;
+  overflow: hidden;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
