@@ -78,13 +78,15 @@ header {
 
 .picture-container {
   display: flex;
+  padding-bottom: 25px;
 }
 
 .picture {
   font: 19px/1.5 Arial, sans-serif;
   padding-top: 15px;
   width: 27%;
-  height: 550px; 
+  padding-bottom: 25px;
+  /*height: 550px;*/ 
   text-align: center;
   margin: auto;
 }
@@ -118,6 +120,44 @@ header {
 }
 .picture a:hover {
 	text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+.our-summary{
+  display: flex;
+  margin: auto;
+}
+
+.pic{
+	width: 48%;
+}
+
+.pic img{
+	width: 98%;
+}
+
+.txt{
+	width: 48%;
+  text-align: center;
+  background-color: #90D577;
+  border-radius: 10%;
+    display: flex;
+    align-items: center;
+	color: #ffffff;
+	padding: 20px 0 20px 0;
+}
+
+.txt p{
+  font: 19px/1.5 Arial, sans-serif;
+	width: 90%;
+	margin: auto;
+}
+
+.txt button{
+  font: 25px/1.5 Arial, sans-serif;
+  margin-top: 10px;
+	padding: 10px 5px 10px 5px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
