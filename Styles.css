@@ -316,6 +316,12 @@ input[type="submit"]:hover {
 
 /* about us page*/
 
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .section {
   display: flex;
   flex-wrap: wrap;
