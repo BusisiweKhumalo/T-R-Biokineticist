@@ -313,3 +313,41 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #007a99;
 }
+
+/* about us page*/
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.text-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.text-container p {
+  color: #666;
+}
