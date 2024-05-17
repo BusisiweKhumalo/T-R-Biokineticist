@@ -201,9 +201,9 @@ footer{
 }
 
 .footer-column {
-	width: 31%;
-	height: 300px;
-	margin: auto;
+  width: 31%;
+  height: 300px;
+  margin: auto;
 }
 
 .footer-column ul {
@@ -224,8 +224,8 @@ footer{
 }
 
 .affiliates img{
-	width: 120px;
-	height: 57px;
+  width: 120px;
+  height: 57px;
 }
 
 /* General link styling */
