@@ -4,7 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book Your Appointment</title>
-<link rel="stylesheet" href="styles.css"> 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #0097B2, #7ed957);
+        color: #333;
+    }
+    .header-content {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img {
+        height: 50px;
+    }
+    .nav-links {
+        list-style-type: none;
+    }
+    .nav-links li {
+        display: inline;
+        margin-right: 15px;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #0097B2;
+        font-weight: bold;
+    }
+    main {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #0097B2;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    fieldset {
+        border: none;
+        margin-bottom: 20px;
+    }
+    legend {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #0097B2;
+    }
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input, select, textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        background-color: #0097B2;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 15px;
+        font-size: 1em;
+        transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #007a92;
+    }
+</style>
 </head>
 <body>
 <header>
