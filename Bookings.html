@@ -37,16 +37,33 @@
         font-weight: bold;
     }
     main {
-        max-width: 600px;
+        max-width: 1200px;
         margin: 50px auto;
         background-color: #fff;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
     h1 {
         text-align: center;
         color: #0097B2;
+    }
+    .calendar {
+        width: 40%;
+        margin-right: 20px;
+    }
+    .calendar iframe {
+        width: 100%;
+        border-width: 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-container {
+        width: 60%;
     }
     form {
         display: flex;
@@ -100,59 +117,67 @@
 </header>
 <main>
     <h1>Book Your Appointment</h1>
-    <form action="/submit_booking.php" method="post">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+    <div class="container">
+        <div class="calendar">
+            <h2>Check Availability</h2>
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Africa%2FJohannesburg&bgcolor=%2333B679&showTitle=0&showTz=0&showTabs=0&showPrint=0&src=enVsdWFuZGlsZTkxQGdtYWlsLmNvbQ&color=%23039BE5" style="border-width:0" width="300" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="form-container">
+            <form action="/submit_booking.php" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
 
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
 
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
 
-            <label for="contactinfo">Contact Information:</label>
-            <input type="tel" id="contactinfo" name="contactinfo" placeholder="Phone Number / Email Address" required>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Appointment Details</legend>
-            <label for="appointmentdate">Preferred Date & Time:</label>
-            <input type="datetime-local" id="appointmentdate" name="appointmentdate" required>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Select Location</legend>
-            <label for="location">Location:</label>
-            <select id="location" name="location" required>
-                <option value="">Select a Location</option>
-                <option value="midrand">Midrand Medical Centre</option>
-                <option value="moreleta">Moreleta Park</option>
-                <option value="wonderpark">Wonderpark Shopping Centre</option>
-            </select>
-        </fieldset>
+                    <label for="contactinfo">Contact Information:</label>
+                    <input type="email" id="contactinfo" name="contactinfo" placeholder="Email Address" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Appointment Details</legend>
+                    <label for="appointmentdate">Preferred Date & Time:</label>
+                    <input type="datetime-local" id="appointmentdate" name="appointmentdate" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Select Location</legend>
+                    <label for="location">Location:</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select a Location</option>
+                        <option value="midrand">Midrand Medical Centre</option>
+                        <option value="moreleta">Moreleta Park</option>
+                        <option value="wonderpark">Wonderpark Shopping Centre</option>
+                    </select>
+                </fieldset>
 
-        <fieldset>
-            <legend>Specific Concerns or Areas of Focus</legend>
-            <label for="concerns">Describe Your Concerns:</label>
-            <textarea id="concerns" name="concerns" rows="4" required></textarea>
-        </fieldset>
+                <fieldset>
+                    <legend>Specific Concerns or Areas of Focus</legend>
+                    <label for="concerns">Describe Your Concerns:</label>
+                    <textarea id="concerns" name="concerns" rows="4" required></textarea>
+                </fieldset>
 
-        <fieldset>
-            <legend>Confirmation and Agreement</legend>
-            <label>
-                <input type="checkbox" name="terms" required> I confirm that the above information is correct and I agree to the terms and conditions.
-            </label>
-        </fieldset>
+                <fieldset>
+                    <legend>Confirmation and Agreement</legend>
+                    <label>
+                        <input type="checkbox" name="terms" required> I confirm that the above information is correct and I agree to the terms and conditions.
+                    </label>
+                </fieldset>
 
-        <input type="submit" value="Submit Booking">
-    </form>
+                <input type="submit" value="Submit Booking">
+            </form>
+        </div>
+    </div>
 </main>
 </body>
 </html>
