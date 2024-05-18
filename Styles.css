@@ -375,9 +375,9 @@ input[type="submit"]:hover {
 /*Gallery----------------------------------------------------------------------------------------------------------------------*/
 
 .group{
-	width: 90%;
-	margin: auto;
-	padding: 60px 0 60px 0
+	height: 83vh;
+      margin-bottom: 6rem;
+
 }
 
 .group img{
