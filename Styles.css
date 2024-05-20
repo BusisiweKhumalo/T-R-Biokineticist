@@ -395,12 +395,7 @@ input[type="submit"]:hover {
 	
 }
 .services-list{
-	font-family: 10px/1.5 Arial, sans-serif;
+	
 	text-align: Center;
-	font: 15px/1.5 Arial, sans-serif;
-    margin-top: 10px;
-    background: linear-gradient(to bottom, #ffffff, #008DD2, #008DD2);
-  border: 2px solid #008DD2;
-  border-radius: 20px;
-  padding: 10px 5px;
+	
 }
