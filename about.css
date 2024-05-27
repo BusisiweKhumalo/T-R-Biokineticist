@@ -88,24 +88,25 @@ button {
 
 /* About us page */
 .about-us {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px 0 20px 0;
 }
 
-.section {
-  display: flex;
+#section {
+  display: block;
   flex-wrap: wrap;
   margin-bottom: 40px;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
   overflow: hidden;
+  padding: 20px;
 }
 
 .image-container {
   flex: 1;
   min-width: 300px;
+  margin: auto;
 }
 
 .image-container img {
@@ -116,8 +117,8 @@ button {
 }
 
 .text-container {
+  font: 19px/1.5 Arial, sans-serif;
   flex: 2;
-  padding: 20px;
 }
 
 .text-container h2 {
