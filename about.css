@@ -110,10 +110,11 @@ button {
 }
 
 .image-container img {
-  width: 100%;
+  width: 60%;
   height: auto;
   display: block;
   object-fit: cover;
+  margin: auto;
 }
 
 .text-container {
@@ -122,6 +123,7 @@ button {
 }
 
 .text-container h2 {
+  text-align: center;
   margin-top: 0;
   color: #333;
 }
