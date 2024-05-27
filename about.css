@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 15px/1.5 Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #F4F5F7;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  font: 18px/1.5 Arial, sans-serif;
+  height: 90px;
+  background: linear-gradient(to right, #0097B2, #7ed957);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.currentPage{
+	color: #045782;
+	font-weight: bold;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+button {
+  font: 18px/1.5 Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #008DD2, #008DD2, #008DD2);
+  border: 1px solid #008DD2;
+  color: white;
+  padding: 1px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.intro-text {
+  background-image: url('about1.png');
+  background-position: center;
+  background-size: cover;
+  padding: 140px 0 50px 0;
+}
+
+.intro-text h1{
+	font: 90px/1.5 Arial, sans-serif;
+	text-align: center;
+	color: #0097b2;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight: bold;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* About us page */
+.about-us {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.text-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.text-container p {
+  color: #666;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+footer{
+  background: linear-gradient(to bottom, #0097B2, #7ed957);
+}
+
+.footer-content {
+  font: 18px/1.5 Arial, sans-serif;
+  color: #ffffff;
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 80px 20px;
+  overflow: hidden;
+}
+
+.footer-content h2 {
+  margin: 25px 0 25px 0;
+  font-weight: bold;
+}
+
+.footer-column {
+	width: 31%;
+	height: 300px;
+	margin: auto;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column h3 {
+  color: white;
+}
+
+.footer-column img {
+  width: 15px; 
+  height: 15px; 
+}
+
+.affiliates img{
+	width: 120px;
+	height: 57px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+a{
+	text-decoration: none;
+}
+a:link {
+	color: #ffffff;
+}
+a:visited {
+	color: #ffffff;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*Media queries----------------------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 800px){
+	
+.navbar {
+  font: 12px/1.5 Arial, sans-serif;
+  height: 60px;
+}
+
+.logo {
+  width: 40px;
+}
+
+.nav-links {
+  margin-right: 10px;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+button {
+  font: 12px/1.5 Arial, sans-serif;
+  padding: 1px 2px 1px 2px;
+  margin-right: 5px;
+}
+
+.intro-text {
+  padding: 70px 0 25px 0;
+}
+
+.intro-text h1{
+	font: 30px/1.5 Arial, sans-serif;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight: bold;
+}
+
+.intro-text p{
+	font: 15px/1.5 Arial, sans-serif;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight: bold;
+}
+
+
+
+.footer-content {
+  font: 12px/1.5 Arial, sans-serif;
+  padding: 0 20px 0px 20px;
+}
+
+.footer-content h2 {
+  font: 15px/1.5 Arial, sans-serif;
+  margin: 12px 0 12px 0;
+  font-weight: bold;
+}
+
+.footer-column img {
+  width: 7px; 
+  height: 7px; 
+}
+
+.affiliates img{
+	width: 60px;
+	height: 28px;
+}
+}
