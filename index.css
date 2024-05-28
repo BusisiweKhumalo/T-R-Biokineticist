@@ -314,6 +314,7 @@ button {
   height: 150px;
   margin: auto;
   padding: 1px;
+  align-items: center;
   overflow: hidden;
 }
 
