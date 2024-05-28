@@ -311,7 +311,7 @@ button {
 .picture {
   font: 12px/1.5 Arial, sans-serif;
   width: 95%;
-  height: 180px;
+  height: 150px;
   margin: auto;
   padding: 1px;
   overflow: hidden;
@@ -319,8 +319,8 @@ button {
 
 .picture img {
   border-radius: 50%; 
-  width: 90px;
-  height: 90px; 
+  width: 100px;
+  height: 100px; 
   object-fit: cover;
   float: right;
 }
