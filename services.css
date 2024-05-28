@@ -201,6 +201,7 @@ a:hover {
 }
 
 button {
+  font: 12px/1.5 Arial, sans-serif;
   padding: 1px 2px 1px 2px;
   margin-right: 5px;
 }
