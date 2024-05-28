@@ -311,7 +311,7 @@ button {
 .picture {
   font: 12px/1.5 Arial, sans-serif;
   width: 95%;
-  height: 150px;
+  height: 180px;
   margin: auto;
   padding: 1px;
   align-items: center;
@@ -324,6 +324,7 @@ button {
   height: 100px; 
   object-fit: cover;
   float: right;
+  align-items: center;
 }
 
 .picture h3{
@@ -332,7 +333,7 @@ button {
 }
 
 .picture p{
-  width: 70%;
+  width: 65%;
   float: left;
   text-align: justify;
 }
